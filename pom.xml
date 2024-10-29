@@ -31,7 +31,7 @@
 		<java.version>17</java.version>
 		<sonar.projectKey>sonar-sprin</sonar.projectKey>
 		<sonar.host.url>http://10.226.41.25:9000</sonar.host.url>
-		<sonar.login>sqp_c21ea7e6aed80c37c1dca80adbfffac41939cfdf</sonar.login>
+		<sonar.login>sqp_f5eed4b229b12232671f7c111e0f17b02ae514dc</sonar.login>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -58,10 +58,10 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
-  <groupId>org.sonarsource.scanner.maven</groupId>
-  <artifactId>sonar-maven-plugin</artifactId>
-  <version>4.0.0.4121</version>
-</plugin>
+ 				<groupId>org.sonarsource.scanner.maven</groupId>
+  				<artifactId>sonar-maven-plugin</artifactId>
+  				<version>4.0.0.4121</version>
+			</plugin>
 		</plugins>
 	</build>
 
