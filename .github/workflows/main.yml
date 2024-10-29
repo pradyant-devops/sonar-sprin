@@ -38,5 +38,5 @@ jobs:
         run: curl -f http://localhost:9000
 
       - name: Build and analyze
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sspj -Dsonar.projectName='sonar-sprin' -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqp_f5eed4b229b12232671f7c111e0f17b02ae514dc
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sspj -Dsonar.projectName='sonar-sprin' -Dsonar.host.url=http://10.226.41.25:9000 -Dsonar.login=sqp_f5eed4b229b12232671f7c111e0f17b02ae514dc
  
