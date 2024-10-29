@@ -37,4 +37,5 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
            echo "sonar is $(secrets.SONAR_HOST_URL)"   
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sonar-sprin -Dsonar.projectName='sonar-sprin'
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:4.0.0.4121:sonar -Dsonar.projectKey=sonar-sprin -Dsonar.projectName='sonar-sprin'
+
