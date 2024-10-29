@@ -32,6 +32,9 @@ jobs:
           path: ~/.m2
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
+      - name: Check SonarQube Connectivity
+        run: curl -f http://220.156.184.9:9000
+
       - name: Build and analyze
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sspj -Dsonar.projectName='sonar-sprin' -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqp_f5eed4b229b12232671f7c111e0f17b02ae514dc
  
